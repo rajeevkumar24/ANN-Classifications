@@ -24,7 +24,7 @@ with open('scaler.pkl', 'rb') as file:
 st.title('customer churn prediction')
 
 # User input
-geography = st.selectbox('Geography', onehot_encoder_geo.categories_[0])
+geography = st.selectbox('Geography', ['France', 'Spain', 'Germany']) 
 gender = st.selectbox('Gender', label_encoder_gender.classes_)
 age = st.slider('Age', 18, 92)
 balance = st.number_input('Balance')
