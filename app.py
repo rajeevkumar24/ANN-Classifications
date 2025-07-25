@@ -20,7 +20,7 @@ with open('scaler.pkl', 'rb') as file:
 
 
 ## streamlit app
-onehot_encoder_geo=OneHotEncoder()
+
 st.title('customer churn prediction')
 
 # User input
